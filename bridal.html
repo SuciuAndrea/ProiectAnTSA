@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bridal Styles - Hair Salon</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>
+    // Configure Tailwind to include custom fonts
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            playfair: ['Playfair Display', 'serif'],
+            roboto: ['Roboto', 'sans-serif'],
+          },
+          colors: {
+            gold: '#b48c6c',
+            darkGold: '#a3785e',
+            lavender: '#E6D4FF',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-lavender font-roboto text-gray-800">
+
+  <!-- Header Section -->
+  <header class="bg-white shadow-md p-5 flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+      <img src="images/logo.png" alt="HairSalon Logo" class="w-16 h-16">
+      <span class="text-2xl font-playfair font-bold">HairSalon</span>
+    </div>
+
+    <nav class="space-x-6">
+      <a href="index.html" class="text-gray-800 hover:text-gold transition">Home</a>
+      <a href="about.html" class="text-gray-800 hover:text-gold transition">About</a>
+      <a href="stylists.html" class="text-gray-800 hover:text-gold transition">Stylists</a>
+      <a href="haircuts.html" class="text-gray-800 hover:text-gold transition">Haircuts</a>
+      <a href="coloring.html" class="text-gray-800 hover:text-gold transition">Coloring</a>
+      <a href="#" class="text-gray-800 hover:text-gold transition">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Bridal Hero Section -->
+  <section class="relative bg-cover bg-center h-96" style="background-image: url('images/bridal-hero.jpg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="absolute inset-0 flex items-center justify-center text-center">
+      <h1 class="text-4xl font-playfair font-bold text-white z-10">Elegant Bridal Styles</h1>
+    </div>
+  </section>
+
+  <!-- Bridal Description Section -->
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-playfair font-bold text-darkGold mb-6">Your Special Day, Perfected</h2>
+      <p class="text-lg text-gray-700 mb-8">
+        Our expert stylists specialize in creating stunning bridal hairstyles tailored to your preferences. From classic updos to modern looks, we ensure you look your best on your wedding day.
+      </p>
+      <a href="#bridal-gallery" class="bg-gold text-white py-3 px-6 rounded shadow-lg hover:bg-darkGold transition">
+        View Bridal Gallery
+      </a>
+    </div>
+  </section>
+
+  <!-- Bridal Stylists Section -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-playfair font-bold text-darkGold mb-8 text-center">Our Bridal Stylists</h2>
+
+      <div class="space-y-12">
+        <!-- Stylist Profile 1 -->
+        <div class="flex flex-col md:flex-row items-center bg-white p-6 rounded-lg shadow-lg">
+          <img src="images/stilist1.jpg" alt="Bridal Stylist 1" class="w-40 h-40 rounded-full object-cover mb-6 md:mb-0 md:mr-6">
+          <div>
+            <h3 class="text-2xl font-playfair font-bold mb-4">Georgiana Oros</h3>
+            <p class="text-gray-700 mb-4">Georgiana specializes in timeless and romantic bridal looks. She works with you to create a style that complements your dress, theme, and personal vision.</p>
+            <p class="font-medium text-darkGold">Years of Experience: 12 Years</p>
+          </div>
+        </div>
+
+        <!-- Stylist Profile 2 -->
+        <div class="flex flex-col md:flex-row items-center bg-white p-6 rounded-lg shadow-lg">
+          <img src="images/stilist2.jpg" alt="Bridal Stylist 2" class="w-40 h-40 rounded-full object-cover mb-6 md:mb-0 md:mr-6">
+          <div>
+            <h3 class="text-2xl font-playfair font-bold mb-4">Oros George</h3>
+            <p class="text-gray-700 mb-4">Oros is known for creating modern bridal hairstyles that stand out. Whether you prefer a sleek bun or intricate braids, he brings your vision to life.</p>
+            <p class="font-medium text-darkGold">Years of Experience: 5 Years</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bridal Gallery Section -->
+  <section id="bridal-gallery" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-playfair font-bold text-darkGold mb-8 text-center">Bridal Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <img src="images/bride1.jpg" alt="Bridal Style 1" class="rounded-lg shadow-lg hover:shadow-xl transition">
+        <img src="images/bride2.jpg" alt="Bridal Style 2" class="rounded-lg shadow-lg hover:shadow-xl transition">
+        <img src="images/bride3.jpg" alt="Bridal Style 3" class="rounded-lg shadow-lg hover:shadow-xl transition">
+        <img src="images/bride4.jpg" alt="Bridal Style 4" class="rounded-lg shadow-lg hover:shadow-xl transition">
+        <img src="images/bride5.jpg" alt="Bridal Style 5" class="rounded-lg shadow-lg hover:shadow-xl transition">
+        <img src="images/bride6.jpg" alt="Bridal Style 6" class="rounded-lg shadow-lg hover:shadow-xl transition">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>&copy; 2024 HairSalon. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>
