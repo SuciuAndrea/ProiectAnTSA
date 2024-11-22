@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haircuts - Hair Salon</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>
+    // Configure Tailwind to include custom fonts
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            playfair: ['Playfair Display', 'serif'],
+            roboto: ['Roboto', 'sans-serif'],
+          },
+          colors: {
+            gold: '#b48c6c',
+            darkGold: '#a3785e',
+            lavender: '#E6D4FF',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-lavender font-roboto text-gray-800">
+
+  <!-- Header Section -->
+  <header class="bg-white shadow-md p-5 flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+      <img src="./assets/logo-tq9OztQh.png" alt="HairSalon Logo" class="w-16 h-16">
+      <span class="text-2xl font-playfair font-bold">HairSalon</span>
+    </div>
+
+    <nav class="space-x-6">
+      <a href="index.html" class="text-gray-800 hover:text-gold transition">Home</a>
+      <a href="about.html" class="text-gray-800 hover:text-gold transition">About</a>
+      <a href="stylists.html" class="text-gray-800 hover:text-gold transition">Stylists</a>
+      <a href="services.html" class="text-gray-800 hover:text-gold transition">Services</a>
+      <a href="contact.html" class="text-gray-800 hover:text-gold transition">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-[50vh] bg-cover bg-center flex items-center justify-center text-white relative" style="background-image: url('images/haircuts-hero.jpg');">
+    <div class="bg-opacity-50 bg-black p-8 rounded-md shadow-md text-center">
+      <h1 class="text-5xl font-playfair font-bold mb-4">Haircuts</h1>
+      <p class="text-xl">Transform your style with precision and care.</p>
+    </div>
+  </section>
+
+  <!-- Haircut Styles Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-playfair font-bold text-darkGold text-center mb-12">Our Signature Haircuts</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Haircut Style Card -->
+        <div class="bg-lavender p-8 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105">
+          <img src="./assets/bob-gMYHZ76V.jpg" alt="Classic Bob" class="w-full h-48 object-cover rounded-md mb-6">
+          <h3 class="text-2xl font-playfair font-bold text-darkGold mb-4">Classic Bob</h3>
+          <p class="text-gray-700 mb-4">A timeless look that suits all face shapes, adding sophistication to your appearance.</p>
+          <p class="text-gold font-bold">Price: $50</p>
+        </div>
+        <!-- Haircut Style Card -->
+        <div class="bg-lavender p-8 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105">
+          <img src="./assets/layer-BupJgGUE.jpg" alt="Layered Cut" class="w-full h-48 object-cover rounded-md mb-6">
+          <h3 class="text-2xl font-playfair font-bold text-darkGold mb-4">Layered Cut</h3>
+          <p class="text-gray-700 mb-4">Add volume and movement to your hair with expertly styled layers.</p>
+          <p class="text-gold font-bold">Price: $65</p>
+        </div>
+        <!-- Haircut Style Card -->
+        <div class="bg-lavender p-8 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105">
+          <img src="./assets/pixiecut-CkhHGZKJ.jpg" alt="Pixie Cut" class="w-full h-48 object-cover rounded-md mb-6">
+          <h3 class="text-2xl font-playfair font-bold text-darkGold mb-4">Pixie Cut</h3>
+          <p class="text-gray-700 mb-4">A bold and stylish option that emphasizes facial features beautifully.</p>
+          <p class="text-gold font-bold">Price: $55</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offers Section -->
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-playfair font-bold text-darkGold mb-8">Exclusive Offers</h2>
+      <p class="text-gray-700 text-lg mb-12">Enjoy special discounts and packages for your next haircut.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold text-darkGold mb-4">Student Discount</h3>
+          <p class="text-gray-700 mb-4">Get 20% off with a valid student ID.</p>
+          <button class="bg-gold text-white py-2 px-6 rounded hover:bg-darkGold transition">Claim Offer</button>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold text-darkGold mb-4">Loyalty Program</h3>
+          <p class="text-gray-700 mb-4">Earn points for every visit and enjoy free haircuts.</p>
+          <button class="bg-gold text-white py-2 px-6 rounded hover:bg-darkGold transition">Learn More</button>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold text-darkGold mb-4">Referral Bonus</h3>
+          <p class="text-gray-700 mb-4">Refer a friend and get $10 off your next visit.</p>
+          <button class="bg-gold text-white py-2 px-6 rounded hover:bg-darkGold transition">Refer Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-playfair font-bold text-darkGold mb-8 text-center">What Our Clients Are Saying</h2>
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full md:w-1/3 px-4 mb-8">
+          <div class="bg-lavender p-6 rounded-lg shadow-lg">
+            <p class="text-gray-700 italic mb-4">"Absolutely love my new layered cut! The stylist really listened to my needs."</p>
+            <p class="font-bold text-darkGold">- Jane D.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-4 mb-8">
+          <div class="bg-lavender p-6 rounded-lg shadow-lg">
+            <p class="text-gray-700 italic mb-4">"The pixie cut was the perfect choice. They nailed it!"</p>
+            <p class="font-bold text-darkGold">- Emily R.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-4 mb-8">
+          <div class="bg-lavender p-6 rounded-lg shadow-lg">
+            <p class="text-gray-700 italic mb-4">"Highly recommend their classic bob—sleek and stylish."</p>
+            <p class="font-bold text-darkGold">- Maria S.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>&copy; 2024 HairSalon. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>

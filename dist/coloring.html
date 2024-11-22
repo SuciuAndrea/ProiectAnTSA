@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coloring - Hair Salon</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>
+    // Configure Tailwind to include custom fonts
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            playfair: ['Playfair Display', 'serif'],
+            roboto: ['Roboto', 'sans-serif'],
+          },
+          colors: {
+            gold: '#b48c6c',
+            darkGold: '#a3785e',
+            lavender: '#E6D4FF',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-lavender font-roboto text-gray-800">
+
+  <!-- Header Section -->
+  <header class="bg-white shadow-md p-5 flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+      <img src="./assets/logo-tq9OztQh.png" alt="HairSalon Logo" class="w-16 h-16">
+      <span class="text-2xl font-playfair font-bold">HairSalon</span>
+    </div>
+
+    <nav class="space-x-6">
+      <a href="index.html" class="text-gray-800 hover:text-gold transition">Home</a>
+      <a href="about.html" class="text-gray-800 hover:text-gold transition">About</a>
+      <a href="stylists.html" class="text-gray-800 hover:text-gold transition">Stylists</a>
+      <a href="#" class="text-gray-800 hover:text-gold transition">Services</a>
+      <a href="contact.html" class="text-gray-800 hover:text-gold transition">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-white py-16 shadow-md">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h1 class="text-4xl font-playfair font-bold text-darkGold mb-6">Professional Hair Coloring Services</h1>
+      <p class="text-lg text-gray-700">
+        Transform your look with vibrant, personalized hair coloring by our skilled stylists. Whether it's a subtle change or a bold new style, we’ve got you covered.
+      </p>
+    </div>
+  </section>
+
+  <!-- Service Details Section -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Left Side - Text -->
+      <div>
+        <h2 class="text-3xl font-playfair font-bold text-darkGold mb-6">Why Choose Our Hair Coloring?</h2>
+        <p class="text-gray-700 mb-4">
+          At HairSalon, we use only the best products and techniques to ensure your hair not only looks amazing but stays healthy. From highlights to balayage, our experts work with you to create a custom color that suits your style.
+        </p>
+        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+          <li>Eco-friendly, high-quality hair dyes</li>
+          <li>Personalized consultations for every client</li>
+          <li>Options for natural, vivid, or pastel colors</li>
+          <li>Special treatments to nourish and protect your hair</li>
+        </ul>
+      </div>
+
+      <!-- Right Side - Image -->
+      <div>
+        <img src="./assets/haircolor-C_z1fB_h.jpg" alt="" class="w-65 h-65">
+    </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="bg-gray-100 py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-playfair font-bold text-darkGold mb-8 text-center">Coloring Services & Pricing</h2>
+
+      <!-- Pricing Table -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-4 text-darkGold">Full Hair Color</h3>
+          <p class="text-gray-700 mb-4">Transform your entire look with a bold or subtle new color.</p>
+          <p class="font-bold text-gold text-xl">$120 - $180</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-4 text-darkGold">Highlights</h3>
+          <p class="text-gray-700 mb-4">Add dimension and brightness to your hair with expertly applied highlights.</p>
+          <p class="font-bold text-gold text-xl">$80 - $150</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-4 text-darkGold">Balayage</h3>
+          <p class="text-gray-700 mb-4">A natural, sun-kissed effect that grows out gracefully.</p>
+          <p class="font-bold text-gold text-xl">$140 - $200</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-4 text-darkGold">Root Touch-Up</h3>
+          <p class="text-gray-700 mb-4">Keep your color fresh with a root touch-up session.</p>
+          <p class="font-bold text-gold text-xl">$60 - $90</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="bg-white py-16">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-playfair font-bold text-darkGold mb-6">Ready for a Fresh Look?</h2>
+      <p class="text-lg text-gray-700 mb-6">
+        Book your coloring session today and let our experts work their magic!
+      </p>
+      <a href="contact.html" class="bg-gold text-white py-3 px-8 rounded hover:bg-darkGold transition inline-block text-lg">
+        Contact Us
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>&copy; 2024 HairSalon. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>

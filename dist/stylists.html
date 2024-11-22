@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylists - Hair Salon</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>
+    // Configure Tailwind to include custom fonts
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            playfair: ['Playfair Display', 'serif'],
+            roboto: ['Roboto', 'sans-serif'],
+          },
+          colors: {
+            gold: '#b48c6c',
+            darkGold: '#a3785e',
+            lavender: '#E6D4FF',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-lavender font-roboto text-gray-800">
+
+  <!-- Header Section -->
+  <header class="bg-white shadow-md p-5 flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+      <img src="./assets/logo-tq9OztQh.png" alt="HairSalon Logo" class="w-16 h-16">
+      <span class="text-2xl font-playfair font-bold">HairSalon</span>
+    </div>
+
+    <nav class="space-x-6">
+      <a href="index.html" class="text-gray-800 hover:text-gold transition">Home</a>
+      <a href="about.html" class="text-gray-800 hover:text-gold transition">About</a>
+      <a href="stylists.html" class="text-gray-800 hover:text-gold transition">Stylists</a>
+      <a href="#" class="text-gray-800 hover:text-gold transition">Services</a>
+      <a href="#" class="text-gray-800 hover:text-gold transition">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Stylists Filter Section -->
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-playfair font-bold text-darkGold mb-8">Find Your Perfect Stylist</h2>
+      <div class="flex justify-center gap-6 mb-8">
+        <a href="haircuts.html" class="bg-gold text-white py-2 px-6 rounded hover:bg-darkGold transition inline-block text-center">
+          Haircuts
+        </a>
+        <a href="coloring.html" class="bg-gold text-white py-2 px-6 rounded hover:bg-darkGold transition inline-block text-center">
+          Coloring
+        </a>
+        <button onclick="window.location.href='bridal.html'" class="bg-gold text-white py-2 px-6 rounded hover:bg-darkGold transition">Bridal</button>
+        <button onclick="window.location.href='texturizing.html'" class="bg-gold text-white py-2 px-6 rounded hover:bg-darkGold transition">Texturizing</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stylists Grid Section -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-playfair font-bold text-darkGold mb-8 text-center">Meet Our Expert Stylists</h2>
+
+      <!-- Stylist Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Stylist Card 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105">
+          <img src="./assets/stilist1-D5vfqDQD.jpg" alt="Stylist 1" class="rounded-full w-40 h-40 mx-auto mb-6 object-cover">
+          <h3 class="text-2xl font-playfair font-bold text-center mb-4">Georgiana Oros</h3>
+          <p class="text-gray-700 text-center mb-4">Specializing in color and cuts, she brings a fresh touch to your hair transformation.</p>
+          
+          <!-- Quick Stylist Info -->
+          <div class="bg-gray-50 p-4 rounded-md text-center mb-4">
+            <p><strong>Years of Experience:</strong> 12 Years</p>
+            <p><strong>Favorite Product:</strong> Kerastase Oil</p>
+            <p><strong>Fun Fact:</strong> Loves to paint in her free time!</p>
+          </div>
+
+        </div>
+
+        <!-- Stylist Card 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105">
+          <img src="./assets/stilist2-DljnR0HZ.jpg" alt="Stylist 2" class="rounded-full w-40 h-40 mx-auto mb-6 object-cover">
+          <h3 class="text-2xl font-playfair font-bold text-center mb-4">Oros George</h3>
+          <p class="text-gray-700 text-center mb-4">With a passion for styling, he creates personalized looks that bring out your best features.</p>
+
+          <!-- Quick Stylist Info -->
+          <div class="bg-gray-50 p-4 rounded-md text-center mb-4">
+            <p><strong>Years of Experience:</strong> 2 Years</p>
+            <p><strong>Favorite Product:</strong> L’Oreal Professional</p>
+            <p><strong>Fun Fact:</strong> Plays guitar in a band!</p>
+          </div>
+        </div>
+
+        <!-- Stylist Card 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105">
+          <img src="./assets/stilist3-CLlTmWMM.jpg" alt="Stylist 3" class="rounded-full w-40 h-40 mx-auto mb-6 object-cover">
+          <h3 class="text-2xl font-playfair font-bold text-center mb-4">Moisa Lavinia</h3>
+          <p class="text-gray-700 text-center mb-4">Focusing on modern cuts and sophisticated styles, he's ready to transform your look.</p>
+
+          <!-- Quick Stylist Info -->
+          <div class="bg-gray-50 p-4 rounded-md text-center mb-4">
+            <p><strong>Years of Experience:</strong> 3 Years</p>
+            <p><strong>Favorite Product:</strong> Bumble and Bumble Mousse</p>
+            <p><strong>Fun Fact:</strong> Always travels with a sketchbook!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section (Carousel) -->
+  <section class="bg-gray-100 py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-playfair font-bold text-darkGold mb-8 text-center">What Our Clients Say</h2>
+
+      <!-- Testimonials Carousel -->
+      <div class="slick-carousel">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <p class="text-gray-700 italic mb-4">"The best salon experience I've ever had! My stylist really listened to what I wanted and delivered an amazing result."</p>
+          <p class="font-bold text-darkGold">Emily R.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <p class="text-gray-700 italic mb-4">"I was a little nervous about the change, but my stylist helped me feel comfortable, and the result is stunning!"</p>
+          <p class="font-bold text-darkGold">David M.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <p class="text-gray-700 italic mb-4">"Absolutely love my new look! I feel like a brand new person thanks to my stylist's creativity and skill."</p>
+          <p class="font-bold text-darkGold">Sarah L.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>&copy; 2024 HairSalon. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texturizing Styles - Hair Salon</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>
+    // Configure Tailwind to include custom fonts
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            playfair: ['Playfair Display', 'serif'],
+            roboto: ['Roboto', 'sans-serif'],
+          },
+          colors: {
+            gold: '#b48c6c',
+            darkGold: '#a3785e',
+            lavender: '#E6D4FF',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-lavender font-roboto text-gray-800">
+
+  <!-- Header Section -->
+  <header class="bg-white shadow-md p-5 flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+      <img src="./assets/logo-tq9OztQh.png" alt="HairSalon Logo" class="w-16 h-16">
+      <span class="text-2xl font-playfair font-bold">HairSalon</span>
+    </div>
+
+    <nav class="space-x-6">
+      <a href="index.html" class="text-gray-800 hover:text-gold transition">Home</a>
+      <a href="about.html" class="text-gray-800 hover:text-gold transition">About</a>
+      <a href="stylists.html" class="text-gray-800 hover:text-gold transition">Stylists</a>
+      <a href="haircuts.html" class="text-gray-800 hover:text-gold transition">Haircuts</a>
+      <a href="coloring.html" class="text-gray-800 hover:text-gold transition">Coloring</a>
+      <a href="bridal.html" class="text-gray-800 hover:text-gold transition">Bridal</a>
+      <a href="#" class="text-gray-800 hover:text-gold transition">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gray-900 text-white py-16 text-center">
+    <h1 class="text-4xl font-playfair font-bold">Texturizing</h1>
+    <p class="text-lg mt-4">Effortless volume, movement, and style. Discover the art of hair texturizing with our specialists.</p>
+  </section>
+
+  <!-- Split Content Section -->
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- Left Side: Image -->
+      <div class="flex items-center justify-center">
+        <img src="./assets/text-DXtOjtso.jpg" alt="Texturizing Technique" class="rounded-lg shadow-lg w-full max-w-md">
+      </div>
+      <!-- Right Side: Content -->
+      <div>
+        <h2 class="text-3xl font-playfair font-bold text-darkGold mb-4">Why Texturizing?</h2>
+        <p class="text-lg text-gray-700 mb-6">
+          Texturizing transforms your hair with subtle layers, enhanced volume, and dynamic styles. Whether you're embracing natural curls or achieving a sleek, lightweight look, texturizing can create a stunning effect.
+        </p>
+        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+          <li>Achieve effortless volume and movement.</li>
+          <li>Perfect for all hair types and lengths.</li>
+          <li>Creates versatile styles that last longer.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Section: Texturizing Techniques -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-playfair font-bold text-darkGold mb-8">Texturizing Techniques</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Technique 1 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <img src="./assets/text1-ChiViDTr.jpg" alt="Razor Cutting" class="rounded-t-lg w-full h-48 object-cover mb-4">
+          <h3 class="text-xl font-playfair font-bold mb-2">Razor Cutting</h3>
+          <p class="text-gray-700">A precise method that softens layers and adds feathered texture to your hair.</p>
+        </div>
+        <!-- Technique 2 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <img src="./assets/text2-BUsLIIcm.jpg" alt="Point Cutting" class="rounded-t-lg w-full h-48 object-cover mb-4">
+          <h3 class="text-xl font-playfair font-bold mb-2">Point Cutting</h3>
+          <p class="text-gray-700">Ideal for creating movement by removing bulk while maintaining length.</p>
+        </div>
+        <!-- Technique 3 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <img src="./assets/text3-BNTHOZkI.jpg" alt="Slide Cutting" class="rounded-t-lg w-full h-48 object-cover mb-4">
+          <h3 class="text-xl font-playfair font-bold mb-2">Slide Cutting</h3>
+          <p class="text-gray-700">Perfect for long hair, adding texture and smooth blending for a polished look.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call-to-Action Section -->
+  <section class="bg-gray-900 text-white py-16 text-center">
+    <h2 class="text-3xl font-playfair font-bold">Ready for a Transformation?</h2>
+    <p class="mt-4 text-lg">Book an appointment with one of our texturizing experts today and redefine your style!</p>
+    <button class="mt-6 bg-gold text-white py-3 px-8 rounded hover:bg-darkGold transition">Book Now</button>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>&copy; 2024 HairSalon. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>
